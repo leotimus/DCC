@@ -41,6 +41,7 @@ parser.add_argument('--deviceID', type=int, help='deviceID', default=0)
 parser.add_argument('--h5', dest='h5', help='to store as h5py file', default=False, type=bool)
 parser.add_argument('--tensorboard', help='Log progress to TensorBoard', action='store_true')
 parser.add_argument('--id', type=int, help='identifying number for storing tensorboard logs')
+parser.add_argument('--clean_log', type=bool, help='something thats missing from master', default=True)
 
 def main(args):
     datadir = get_data_dir(args.db)

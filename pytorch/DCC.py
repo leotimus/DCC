@@ -9,6 +9,10 @@ import argparse
 from config import cfg, get_data_dir, get_output_dir, AverageMeter, remove_files_in_dir
 
 import data_params as dp
+import matplotlib as mpl
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using non-interactive Agg backend')
+    mpl.use('Agg')
 import matplotlib.pyplot as plt
 import io
 import PIL.Image

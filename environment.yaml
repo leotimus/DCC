@@ -1,0 +1,16 @@
+name: dcc
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python=2.7.18
+  - pytorch
+  - torchvision
+  - pip:
+      - easydict
+      - scipy
+      - h5py
+      - tensorboard-logger
+      - tensorboardX
+      - matplotlib
+      - sklearn
